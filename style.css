@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: capitalize;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {  
+}
+
+.header {
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.logo {
+  text-transform: capitalize;
+}
+
+.menu {
+  outline: 1px solid red; 
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.info {
+  background-image: url('./images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  outline: 1px solid red;
+}
+
+.info__cover {
+  outline: 1px solid green;
+  padding: 0.5rem;
+}
+
+.info:hover {
+  /* opacity: 1;  */
+  cursor: pointer;
+}
+
+.info h2 {
+  text-transform: capitalize;
+  letter-spacing: 0.111rem;
+}
+
+.info p {
+  line-height: 1.3;
+  font-size: 1.4rem;
+  margin: 1.3rem 0;
+}
+
+.btn {
+  padding: 0.5rem 1rem;  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2rem;  
+}
+
+.sec h2 {
+  color: #222;
+  text-align: center;
+}
+
+
+/* PORTFOLIO */
+.portfolio , .service, .contact {
+  padding: 1rem 0.3rem;
+  text-align: center;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem; 
+}
+
+.list {
+   background-color: rgb(184, 184, 184);
+   padding: 0.5rem 0.2rem;
+   border-radius:8px;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   -ms-border-radius:8px;
+   -o-border-radius:8px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.sec h4 {
+  font-size: 20px;
+  color: blue;
+}
+
+/* SERVICE */
+.service-info {
+  text-align: start;
+  padding: 0.4rem;
+}
+
+.service-detail {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.service-list {
+  padding: 0 0 3rem;
+}
+
+.btn-secondary {
+  border: none;
+  text-transform: capitalize;
+  padding: 0;
+}
+
+
+/* CONTACT */
+.contact {
+  text-align: start;
+}
+
+.contact-desc {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;  
+}
+
+.flex-row {
+  outline: 1px solid red;  
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form-cover,
+.contact-info {
+  outline: 1px solid green;
+  padding: 0.5rem;  
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  outline: 1px solid;
+  padding: 0.4rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+
+.form-control label {
+  text-transform: capitalize;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+  padding: 0.5rem 0.2rem;
+}
+
+textarea {
+  height: 160px;
+
+}
+
+button[type="submit"] {
+  padding: 0.4rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.123rem;
+}
+
+.flex li {
+  display: flex;  
+  align-items: center;  
+  gap: 0.5rem;
+}
+
+.contact-icon-cover {
+  outline: 1px solid;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* media query Tablet Devices */
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: rgb(56, 104, 236);    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .menu {  
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .info__cover {
+   align-self: flex-start;
+   width: 50%;
+  }
+  .grid {   
+    grid-template-columns: 1fr 1fr;   
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .service-card h4 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .header {
+    background-color: olivedrab;
+  }
+  .info__cover {
+    align-self: flex-start;
+    width: 40%;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+    .service-card h4 {
+      font-size: 23px;
+    }
+    .flex {    
+      grid-template-columns: 1fr 1fr;
+    }   
+    .flex-row {
+     grid-template-columns: 1fr;
+    }
+}

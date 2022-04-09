@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <header class="header">
+    <div class="logo">
+      <h1>responsive design</h1>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="#">about</a>
+      </li>
+      <li>
+        <a href="#">portfolio</a>
+      </li>
+      <li>
+        <a href="#">service</a>
+      </li>
+      <li>
+        <a href="#">contact</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="sec about">
+      <div class="info">
+        <div class="info__cover">
+        <h2>responsive design</h2>
+        <p>
+          these is a responsive-design <span>crash course</span>. here you will learn how make responsive with mobile-first approach
+        </p>
+        <a href="#" class="btn btn-primary">lear more &rarr;</a>
+        </div>
+      </div>      
+    </section>
+    <section class="sec service">
+      <h2>our portfolio</h2>
+      <ul class="grid">
+        <li class="list">
+          <img class="icon" src="./images/car-solid.svg" alt="fast">
+          <div class="service-card">
+            <h4>fast</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aperiam?</p>
+          </div>
+        </li>
+         <li class="list">
+          <img class="icon" src="./images/check-circle-solid.svg" alt="responsive">
+          <div class="service-card">
+            <h4>responsive</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aperiam?</p>
+          </div>
+        </li>
+         <li class="list">
+          <img class="icon" src="./images/code-solid.svg" alt="intuitive">
+          <div class="service-card">
+            <h4>intuitive</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aperiam?</p>
+          </div>
+        </li>
+         <li class="list">
+          <img class="icon" src="./images/cog-solid.svg" alt="dynamic">
+          <div class="service-card">
+            <h4>dynamic</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aperiam?</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- service -->
+    <section class="sec service">
+      <h2>our service</h2>
+      <p class="service-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium culpa quia recusandae corporis animi.</p>
+      <ul class="grid">
+        <li class="list service-list">
+          <img class="sercive-img" src="./images/service-img1.jpg" alt="">
+          <div class="service-info">
+          <h3>best service</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam.</p>
+          <a href="#" class="btn btn-secondary">read more &rarr;</a>
+          </div>
+        </li>
+        <li class="list service-list">
+          <img class="sercive-img" src="./images/service-img2.jpg" alt="">
+          <div class="service-info">
+          <h3>best service</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam.</p>
+          <a href="#" class="btn btn-secondary">read more &rarr;</a>
+          </div>
+        </li>
+        <li class="list service-list">
+          <img class="sercive-img" src="./images/service-img3.jpg" alt="">
+          <div class="service-info">
+          <h3>best service</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam.</p>
+          <a href="#" class="btn btn-secondary">read more &rarr;</a>
+          </div>
+        </li>
+      </ul>
+      <div >               
+    </section>
+    <!-- contact -->
+    <section class="sec contact">
+      <h2>our contact</h2>
+      <p class="contact-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio.</p>
+      <div class="flex">
+        <div class="contact-form-cover">
+          <form class="contact-form">
+            <div class="form-control">
+              <label for="name">name:</label>
+              <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form-control">
+            <label for="email">email:</label>
+              <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-control">
+            <label for="message">message:</label>
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit">send</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <ul class="flex flex-row">
+            <!-- item 1 -->
+            <li>
+              <div class="contact-icon-cover">
+                <img class="icon" src="./images/ambulance-solid.svg" alt="location" srcset="">
+              </div>
+              <p>Lorem ipsum dolor</p>              
+            </li>
+            <!-- item 2 -->
+            <li>
+              <div class="contact-icon-cover">
+                <img class="icon" src="./images/sync-solid.svg" alt="location" srcset="">
+              </div>
+              <p>Lorem ipsum dolor</p>              
+            </li>
+            <!-- item 3 -->
+            <li>
+              <div class="contact-icon-cover">
+                <img class="icon" src="./images/tools-solid.svg" alt="location" srcset="">
+              </div>
+              <p>Deserunt, optio?</p>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+</body>
+</html>
