@@ -1,0 +1,247 @@
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-blue: #002240;
+  --white-color: #fff;
+  --dark-color: #222;
+  --light-color: #f4f4f4;
+  --border-bottom-clr: #b4becb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #ccc;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.nav {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+
+.nav-menu {
+  gap: 1rem;
+  background-color: rgba(0,0,0,0.1);
+  padding: 0.43rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+.nav-menu a:hover {
+  border-bottom: 1px var(--light-color) solid;
+}
+
+/* hero */
+.hero-section {
+  position: relative;
+}
+
+.hero-section::before,
+.hero-section::after {
+  position: absolute;
+  content: "";
+  background-color: #ccc;
+  height: 100px;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+}
+
+.hero {
+  background-image: url('/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 430px;
+}
+
+.hero-content {
+  background-color: rgba(17, 20, 185, 0.1);
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h2, p {
+  color: #fff;
+}
+
+.hero-content h2 {
+  line-height: 1.6;
+}
+
+.hero-content p {
+  line-height: 1.4;
+}
+
+.hero-content a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* about */
+.about .card {
+  background-color: var(--light-color)
+}
+
+.about h2 {
+  margin-top: 6rem;  
+}
+
+.about .card img {
+  width: 50px;
+  height: 50px;
+}
+
+.about .card p {
+  color: #333;
+}
+
+/* portfolio */
+.portfolio {
+  position: relative;
+}
+
+.portfolio-list a{
+  color: var(--light-color);
+  text-decoration: none;  
+}
+
+.portfolio::before,
+.portfolio::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  background-color: #ccc;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transform: skewY(-3deg) ;
+  -webkit-transform: skewY(-3deg) ;
+  -moz-transform: skewY(-3deg) ;
+  -ms-transform: skewY(-3deg) ;
+  -o-transform: skewY(-3deg) ;
+}
+
+.portfolio .portfolio-list {
+  padding-bottom: 4rem;
+}
+
+/* contact */
+.form-control {
+  margin-bottom: 1rem;
+}
+
+/* footer */
+.container .foot-1-list {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.foot-2 i {
+  padding: 0 0.5rem;
+}
+
+.foot-2 img {
+  width: 20px;
+  height: 20px;  
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  width: 100%;
+  border-color: transparent;  
+  border-bottom: 1px solid #b4becb;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact .contact-form {
+  align-self: center;
+  justify-self: center;
+}
+
+@media(min-width: 668px){
+  .header .flex {
+    padding: 0 1rem;
+  }
+  .header .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-menu {  
+    background-color: transparent;    
+  }
+  .nav-menu a {
+    font-size: 1.2rem;
+  }
+  .nav-menu a:hover {
+    color: rgba(252, 245, 245, 0.705);
+    border: none;    
+  }
+  .hero-content {
+    justify-content: start;
+  }
+  .hero-card{    
+    width: 50%;    
+    padding: 2rem 1rem;        
+  }
+  .about .grid-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  } 
+  .container .foot-1-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(min-width: 992px){
+  /* portfolio */
+  .portfolio .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .portfolio-list h3 {
+    font-size: 2rem;
+  }
+  .portfolio-list p {
+    font-size: 1.4rem;
+  }
+   .portfolio-list a {
+     font-size: 1.3rem;
+   }
+}
